@@ -1,0 +1,37 @@
+1.A single line contains a string.Print the characters in a string separated by comma.
+
+ let x = userInput[0].split("").join(",");
+
+      console.log(x);
+
+2.A positive integer is provided to you as an input.Print the First 3 multiples of the number with single spaces between them as an output.
+
+ let num = userInput[0]*1;
+ let num1 = userInput[0]*2;
+ let num2 = userInput[0]*3;
+ console.log(num + " " + num1+ " " +num2);
+
+ 3.A positive integer is provided.Find the cube of the number.
+
+ let num = userInput[0]*userInput[0]*userInput[0];
+    console.log(num);
+
+4.A positive integer is provided as an input.Print the factorial of the integer.
+
+let x = userInput[0];
+   let fact = 1;
+   for(let i = 1; i<= x; i++){
+   fact = fact*i; 
+   }
+    console.log(fact);
+
+5.The Radius of a circle is provided as the input of the program.Calculate and print the Circumference of the circle corresponding to the input radius up to two decimal places.
+
+let a = userInput[0];
+    if(a<0){
+        console.log("Error");
+    }
+    else{
+        circumference = 2 * Math.PI * a;
+        console.log(circumference.toFixed(2));
+    }
